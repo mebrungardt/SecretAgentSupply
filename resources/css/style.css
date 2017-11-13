@@ -1,0 +1,46 @@
+/* Base font size 18px all font in page is Helvetica */
+html {
+  font-size: 18px;
+  font-family: helvetica, sans-serif
+}
+
+/*Maincontainer covers full width of page.  section containers will be 960px wide*/
+.maincontainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/*Begin Header styling*/
+.header {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+
+.headcontainer {
+  width: 960px;
+  display: inline-flex;
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 .5rem;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.title {
+  margin: 0.5rem 0.66rem;
+}
+
+/*Begin MainBanner styling*/
+.mainbanner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+}
