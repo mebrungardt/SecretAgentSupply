@@ -1,7 +1,8 @@
 /* Base font size 18px all font in page is Helvetica */
 html {
   font-size: 18px;
-  font-family: helvetica, sans-serif
+  font-family: helvetica, sans-serif;
+  color: white;
 }
 
 /*Maincontainer covers full width of page.  section containers will be 960px wide*/
@@ -20,7 +21,6 @@ html {
 .headcontainer {
   width: 960px;
   display: inline-flex;
-  color: white;
   justify-content: flex-start;
   align-items: center;
 }
@@ -37,10 +37,157 @@ html {
   margin: 0.5rem 0.66rem;
 }
 
-/*Begin MainBanner styling*/
+/*Begin mainbanner styling*/
 .mainbanner {
+  display: flex;
+  justify-content: center;
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 25rem;
+}
+
+.mainbannercontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+.newarrival {
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  background-color: black;
+  color: white;
+
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*Begin nav Styling */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+nav span {
+  display: inline-flex;
+  margin: .75rem 0;
+}
+
+/*Begin productgrid styling */
+.productgrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.productgridcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  width: 960px;
+}
+
+.product {
+  border: 4px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
+  align-items: center;
+}
+
+.productimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13rem;
+  width: 13rem;
+}
+
+.productimg img {
+  display: flex;
+  max-width: 9rem;
+  max-height: 9rem;
+  height: auto;
+  width: auto;
+  margin: 2rem;
+}
+
+.productdescription {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+/*Begin about styling*/
+.aboutgrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-bottom: 4rem;
+}
+
+.aboutgridcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 35%;
+}
+
+.abouttitle {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+}
+
+.aboutinfo {
+  color: black;
+}
+
+/*Begin footer styling*/
+.footergrid {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 960px;
 }
