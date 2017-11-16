@@ -1,4 +1,5 @@
 /* Base font size 18px all font in page is Helvetica */
+
 html {
   font-size: 18px;
   font-family: helvetica, sans-serif;
@@ -6,12 +7,14 @@ html {
 }
 
 /*Maincontainer covers full width of page.  section containers will be 960px wide*/
+
 .maincontainer {
   display: flex;
   flex-flow: column nowrap;
 }
 
 /*Begin Header styling*/
+
 .header {
   display: flex;
   background-color: black;
@@ -38,6 +41,7 @@ html {
 }
 
 /*Begin mainbanner styling*/
+
 .mainbanner {
   display: flex;
   justify-content: center;
@@ -63,7 +67,6 @@ html {
   flex-flow: column nowrap;
   background-color: black;
   color: white;
-
 }
 
 h3 {
@@ -78,6 +81,7 @@ h1 {
 }
 
 /*Begin nav Styling */
+
 .nav {
   display: flex;
   justify-content: center;
@@ -96,7 +100,12 @@ nav span {
   margin: .75rem 0;
 }
 
+.mininav {
+  display: none;
+}
+
 /*Begin productgrid styling */
+
 .productgrid {
   width: 100%;
   display: flex;
@@ -106,12 +115,30 @@ nav span {
 
 .productgridcontainer {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 960px;
 }
 
-.product {
+.product1 {
+  border: 4px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
+  align-items: center;
+}
+
+.product2 {
+  border: 4px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
+  align-items: center;
+}
+
+.product3 {
   border: 4px solid black;
   display: flex;
   flex-flow: column nowrap;
@@ -145,6 +172,7 @@ nav span {
 }
 
 /*Begin about styling*/
+
 .aboutgrid {
   width: 100%;
   display: flex;
@@ -177,6 +205,7 @@ nav span {
 }
 
 /*Begin footer styling*/
+
 .footergrid {
   display: flex;
   justify-content: center;
@@ -190,4 +219,81 @@ nav span {
   justify-content: flex-start;
   align-items: center;
   width: 960px;
+}
+
+/*Begin Media Query Tablet portrait*/
+
+@media only screen and (max-width: 1074px) {
+  /*nav changes*/
+  .mininav {
+    display: flex;
+    justify-content: center;
+    padding: .75rem;
+  }
+  nav {
+    display: none;
+  }
+  /*product changes*/
+  .product1 {
+    width: 47%;
+  }
+  .product2 {
+    width: 47%;
+  }
+  .product3 {
+    display: none;
+  }
+}
+
+/*Begin Media Query phone */
+
+@media only screen and (max-width: 470px) {
+  /*banner changes*/
+  h3 {
+    font-size: .77rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .mainbanner {
+    height: 15rem;
+  }
+
+  .newarrival {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  /*product changes*/
+  .productgridcontainer {
+    justify-content: center;
+    padding-bottom: 2.5rem;
+  }
+  .product1 {
+    width: 90%;
+  }
+  .product2 {
+    display: none;
+  }
+
+  /*about changes*/
+  .aboutgridcontainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .about {
+    width: 90%;
+    margin-top: .5rem;
+  }
+
+  /*footer changes*/
+  .footercontainer {
+    justify-content: center;
+  }
 }
